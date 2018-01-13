@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Action = props => {
+const Action = (props) => {
   return (
     <div>
-      <button disabled={!props.hasOption} onClick={props.handlePick}>
-        What should I Do
+      <button
+        onClick={props.handlePick}
+        disabled={!props.hasOptions}
+      >
+        What should I do?
       </button>
     </div>
   );
